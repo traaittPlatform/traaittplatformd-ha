@@ -47,7 +47,7 @@ const traaittPlatformd = function (opts) {
   this.dataDir = opts.dataDir || path.resolve(os.homedir(), './.traaittPlatform')
   this.logFile = opts.logFile || path.resolve(__dirname, './traaittPlatformd.log')
   this.logLevel = opts.logLevel || 2
-  this.enableCors = opts.enableCors || false
+  this.enableCors = opts.enableCors || "*"
   this.enableBlockExplorer = (typeof opts.enableBlockExplorer === 'undefined') ? true : opts.enableBlockExplorer
   this.enableBlockExplorerDetailed = (typeof opts.enableBlockExplorerDetailed === 'undefined') ? true : opts.enableBlockExplorerDetailed
   this.loadCheckpoints = opts.loadCheckpoints || false
