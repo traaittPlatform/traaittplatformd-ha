@@ -91,9 +91,9 @@ var daemon = new traaittPlatformd({
   enableBlockExplorerDetailed: false, // Enable the detailed block explorer
   loadCheckpoints: false, // If set to a path to a file, will supply that file to the daemon if it exists.
   rpcBindIp: '0.0.0.0', // What IP to bind the RPC server to
-  rpcBindPort: 23896, // What Port to bind the RPC server to
+  rpcBindPort: 24496, // What Port to bind the RPC server to
   p2pBindIp: '0.0.0.0', // What IP to bind the P2P network to
-  p2pBindPort: 23897, // What Port to bind the P2P network to
+  p2pBindPort: 24497, // What Port to bind the P2P network to
   p2pExternalPort: 0, // What External Port to bind the P2P network to for those behind NAT
   allowLocalIp: false, // Add our own IP to the peer list?
   peers: false, // Manually add the peer(s) to the list. Allows for a string or an Array of strings.
@@ -838,11 +838,11 @@ Gets a block hash by height.
 ```javascript
 {
   "peers": [
-    "174.21.179.198:23897",
-    "94.23.49.75:23897",
+    "174.21.179.198:24497",
+    "94.23.49.75:24497",
     "...",
-    "80.14.183.25:23897",
-    "71.193.1.94:23897"
+    "80.14.183.25:24497",
+    "71.193.1.94:24497"
   ],
   "status": "OK"
 }
