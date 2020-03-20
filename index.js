@@ -39,7 +39,7 @@ const traaittPlatformd = function (opts) {
   this.clearP2pOnStart = (typeof opts.clearP2pOnStart === 'undefined') ? true : opts.clearP2pOnStart
   this.clearDBLockFile = (typeof opts.clearDBLockFile === 'undefined') ? true : opts.clearDBLockFile
   this.timeout = opts.timeout || 2000
-  this.enableWebSocket = (typeof opts.enableWebSocket === 'undefined') ? true : opts.enableWebSocket
+  this.enableWebSocket = (typeof opts.enableWebSocket === 'undefined') ? false : opts.enableWebSocket
   this.webSocketPassword = opts.webSocketPassword || false
 
   // Begin traaittPlatformd options
@@ -61,12 +61,12 @@ const traaittPlatformd = function (opts) {
   this.priorityNodes = opts.priorityNodes || false
   this.exclusiveNodes = opts.exclusiveNodes || false
   this.seedNode = opts.seedNode || false
-  this.hideMyPort = (typeof opts.hideMyPort === 'undefined') ? true : opts.hideMyPort
+  this.hideMyPort = (typeof opts.hideMyPort === 'undefined') ? false : opts.hideMyPort
   this.dbThreads = opts.dbThreads || false
   this.dbMaxOpenFiles = opts.dbMaxOpenFiles || false
   this.dbWriteBufferSize = opts.dbWriteBufferSize || false
   this.dbReadBufferSize = opts.dbReadBufferSize || false
-  this.dbCompression = (typeof opts.dbCompression === 'undefined') ? true : opts.dbCompression
+  this.dbCompression = (typeof opts.dbCompression === 'undefined') ? false : opts.dbCompression
   this.feeAddress = opts.feeAddress || false
   this.feeAmount = opts.feeAmount || 0
 
